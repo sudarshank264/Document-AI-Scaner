@@ -1,0 +1,219 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  padding-top: 60px;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #0056b3;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.navbar:hover {
+  background-color: #003f80;
+}
+
+/* Navbar Brand */
+.navbar .brand {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Navbar Links */
+.navbar .nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 0 15px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out;
+}
+
+.navbar .nav-links a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Navbar Buttons */
+.navbar .nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar .nav-buttons .button {
+  background-color: #28a745;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.navbar .nav-buttons .button:hover {
+  background-color: #218838;
+}
+
+.navbar .nav-buttons .logout {
+  background-color: #dc3545;
+}
+
+.navbar .nav-buttons .logout:hover {
+  background-color: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      text-align: center;
+      padding: 10px;
+  }
+
+  .navbar .nav-links {
+      margin-top: 10px;
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .navbar .nav-buttons {
+      margin-top: 10px;
+  }
+}
+
+/* Container */
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form */
+.form-container {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-container button {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Dashboard */
+.dashboard {
+  text-align: center;
+}
+
+.dashboard h2 {
+  margin-bottom: 20px;
+}
+
+.credit-info {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.scan-history {
+  margin-top: 20px;
+}
+
+.scan-history ul {
+  list-style-type: none;
+}
+
+.scan-history li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Buttons */
+.button {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #218838;
+}
+
+.button.danger {
+  background-color: #dc3545;
+}
+
+.button.danger:hover {
+  background-color: #c82333;
+}
+.chatbox{
+  text-align: center;
+}
+/* Responsive */
+@media (max-width: 600px) {
+  .navbar {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .form-container {
+      width: 90%;
+  }
+}
